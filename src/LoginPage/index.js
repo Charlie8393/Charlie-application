@@ -4,7 +4,7 @@ const Container = styled.div`
     background-color:#28bec6;
     display: flex; //Flex Container
     //This will make it up to down.
-    
+    flex-direction:column;
 `;
 
 /**
