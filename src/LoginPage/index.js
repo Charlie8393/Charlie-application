@@ -54,6 +54,7 @@ const Button = styled.button`
     position: relative;
     left: 3%;
     background-color:#03fc90;
+    
 `
 function LoginPage(){
     return (
@@ -66,9 +67,9 @@ function LoginPage(){
             </div>
             <div>
             <Label>Password</Label>
-            <Input></Input>
+            <Input type="Password"></Input>
             </div>
-            <Button>GO</Button>
+            <Button>Login</Button>
         </Leftside>
         <Rightside src="https://www.sportscasting.com/wp-content/uploads/2020/03/Boston-Red-Sox-bats-at-spring-training.jpg"></Rightside>
         
