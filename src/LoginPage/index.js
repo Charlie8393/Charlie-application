@@ -68,7 +68,7 @@ function LoginPage(){
             <Label>Password</Label>
             <Input></Input>
             </div>
-            <Button>GO</Button>
+            <Button>Login</Button>
         </Leftside>
         <Rightside src="https://www.sportscasting.com/wp-content/uploads/2020/03/Boston-Red-Sox-bats-at-spring-training.jpg"></Rightside>
         
