@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import React, {useState} from "react";
 const Container = styled.div`
     height: 100vh;
     background-color:#346beb;
@@ -57,6 +58,15 @@ const Button = styled.button`
     
 `
 function LoginPage(){
+    const[user,setUser] = useState({
+        id:"Charlie2004",
+        password:"Korea1126",
+    });
+    const {id, password} = user;
+    // Create a function which routes to Mainpage
+    const gomain = () => {
+        alert("Write properly");
+    }
     return (
     <Container>
         <Leftside>
@@ -69,7 +79,7 @@ function LoginPage(){
             <Label>Password</Label>
             <Input type="Password"></Input>
             </div>
-            <Button>Login</Button>
+            <Button onClick={gomain}>Login</Button>
         </Leftside>
         <Rightside src="https://www.sportscasting.com/wp-content/uploads/2020/03/Boston-Red-Sox-bats-at-spring-training.jpg"></Rightside>
         
