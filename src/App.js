@@ -1,18 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-import {BrowserRouter , Routes, Route} from "react-router-dom";
+import {BrowserRouter as Router, Route} from "react-router-dom";
 import LoginPage from './LoginPage';
 import MainPage from './MainPage';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<LoginPage />} />
-        <Route path="/main" element={<MainPage />} />
+    <div>
+      <Router>
+        <Route exact path="/" component={LoginPage} />
+        <Route exact spath="/main" component={MainPage} />
         
-      </Routes>
-    </BrowserRouter>
+      </Router>
+    </div>
   );
 }
 

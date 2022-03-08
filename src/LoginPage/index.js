@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import React, {useState} from "react";
+import {useHistory} from "react-router-dom";
 const Container = styled.div`
     height: 100vh;
     background-color:#346beb;
@@ -58,14 +59,28 @@ const Button = styled.button`
     
 `
 function LoginPage(){
+    const history = useHistory();
     const[user,setUser] = useState({
-        id:"Charlie2004",
-        password:"Korea1126",
-    });
+        id:"",
+        password:"",
+    }); // when we first load a page we initialize the states to empty string / nill / 0.
+    // states will be filled un when the user does specific action.
     const {id, password} = user;
     // Create a function which routes to Mainpage
     const gomain = () => {
-        alert("Write properly");
+        history.push("/main");
+    };
+    // e stands for events
+    const putUserInfo = (e) => {
+        const {name,value} = e.target;
+        console.log(name);
+        console.log(value);
+        setUser ({
+            ...user,
+            // use name to avoid repetition to use same code.
+            [name]: value,
+        });
+        console.log(user);
     }
     return (
     <Container>
@@ -73,11 +88,13 @@ function LoginPage(){
             <WelcomeTitle>Welcome Back!</WelcomeTitle>
            <div>
             <Label>ID</Label>
-            <Input></Input>
+            {/* // we are going to replace empty string to the following input by the
+            user * */}
+            <Input type="text" value = {id} name = "id" onChange={putUserInfo}></Input>
             </div>
             <div>
             <Label>Password</Label>
-            <Input type="Password"></Input>
+            <Input type="Password" value={password} name = "password" onChange={putUserInfo}></Input>
             </div>
             <Button onClick={gomain}>Login</Button>
         </Leftside>
