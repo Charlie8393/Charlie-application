@@ -68,7 +68,14 @@ function LoginPage(){
     const {id, password} = user;
     // Create a function which routes to Mainpage
     const gomain = () => {
-        history.push("/main");
+        if(id ==="" || password===""){
+            alert("ID or passowrd is empty");
+            return;
+        }
+        if(id==="Charlie" && password==="1234"){
+            alert("You may Log in!");
+            history.push("/main");
+        }
     };
     // e stands for events
     const putUserInfo = (e) => {
@@ -104,3 +111,4 @@ function LoginPage(){
     );
 }
 export default LoginPage;
+
