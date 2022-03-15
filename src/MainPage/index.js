@@ -3,8 +3,9 @@ const Container = styled.div`
     height: 100vh;
     background-color:#346beb;
     display: flex; 
-    display: column;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 `;
 const WelcomeTitle = styled.h1`
     color: #42f5e9;
