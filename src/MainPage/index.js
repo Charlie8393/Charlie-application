@@ -29,7 +29,7 @@ function MainPage(){
     return(
         <Container>
         <WelcomeTitle>Charlie</WelcomeTitle>
-        <Introduce>Reading book, Watching baseball, do homework</Introduce>
+        <Introduce>Reading book | Watching baseball | Do homework</Introduce>
         <Picture src="https://www.oberlo.com/media/1612639204-image3.jpg?fit=max&fm=jpg&w=1824"></Picture>
         <Picture src="https://img.global.news.samsung.com/global/wp-content/uploads/2015/07/Main_Thumb_0708.jpg"></Picture>
         <Picture src="https://1en5vh48t4rqdnq1j3h9ihn4-wpengine.netdna-ssl.com/wp-content/uploads/2006/09/make-the-homework-hour-happy-hour-top-10-tips-860x420.jpg"></Picture>
