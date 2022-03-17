@@ -3,7 +3,7 @@ const Container = styled.div`
     height: 100vh;
     background-color:#346beb;
     display: flex; 
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 `;
@@ -11,19 +11,21 @@ const WelcomeTitle = styled.h1`
     color: #42f5e9;
     font-weight: 800;
     font-size: 40px;
-    margin-top: 150px;
+    margin-top: -350px;
+    margin-left: 600px;
 `;
 
 const Introduce = styled.div`
     color: #fcba03;
     font-weight: 800;
     font-size: 40px;
-    margin-top: 250px;
+    margin-top: -100px;
 `;
 const Picture = styled.img`
     margin-top: 350px;
-    width:10%;
-    height:10%;
+    width:100px;
+    height:100px;
+    
 `
 function MainPage(){
     return(
