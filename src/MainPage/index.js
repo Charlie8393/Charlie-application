@@ -3,7 +3,7 @@ const Container = styled.div`
     height: 100vh;
     background-color:#346beb;
     display: flex; 
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 `;
@@ -11,30 +11,35 @@ const WelcomeTitle = styled.h1`
     color: #42f5e9;
     font-weight: 800;
     font-size: 40px;
-    margin-top: -350px;
-    margin-left: 600px;
+    margin-top: 100px;
 `;
 
 const Introduce = styled.div`
     color: #fcba03;
     font-weight: 800;
     font-size: 40px;
-    margin-top: -100px;
+    margin-top: 150px;
 `;
 const Picture = styled.img`
-    margin-top: 350px;
-    width:100px;
-    height:100px;
-    
+    margin-top: 170px;
+    width:150px;
+    height:150px;
+    position: center;
+`
+const ImageWrapper = styled.div`
+    display: flex;
+    flex-direction: row;
 `
 function MainPage(){
     return(
         <Container>
-        <WelcomeTitle>Charlie</WelcomeTitle>
+        <WelcomeTitle>Charlie Sohn</WelcomeTitle>
         <Introduce>Reading book | Watching baseball | Do homework</Introduce>
-        <Picture src="https://www.oberlo.com/media/1612639204-image3.jpg?fit=max&fm=jpg&w=1824"></Picture>
-        <Picture src="https://img.global.news.samsung.com/global/wp-content/uploads/2015/07/Main_Thumb_0708.jpg"></Picture>
-        <Picture src="https://1en5vh48t4rqdnq1j3h9ihn4-wpengine.netdna-ssl.com/wp-content/uploads/2006/09/make-the-homework-hour-happy-hour-top-10-tips-860x420.jpg"></Picture>
+        <ImageWrapper>
+            <Picture src="https://www.oberlo.com/media/1612639204-image3.jpg?fit=max&fm=jpg&w=1824"></Picture>
+            <Picture src="https://www.seoulfn.com/news/photo/201803/301820_102172_53.jpg"></Picture>
+            <Picture src="https://1en5vh48t4rqdnq1j3h9ihn4-wpengine.netdna-ssl.com/wp-content/uploads/2006/09/make-the-homework-hour-happy-hour-top-10-tips-860x420.jpg"></Picture>
+        </ImageWrapper>
         </Container>
     );
 }
