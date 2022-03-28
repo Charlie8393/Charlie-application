@@ -76,6 +76,10 @@ function LoginPage(){
             alert("You may Log in!");
             history.push("/main");
         }
+        if(id!=="Charlie"|| password!=="1234"){
+            alert("ID or password is wrong");
+            return;
+        }
     };
     // e stands for events
     const putUserInfo = (e) => {
