@@ -82,7 +82,7 @@ function Othermain(){
         <Container>
             <Me>About Me</Me>
             <Introduce>Hello I am Charlie Sohn. I am a Student from South Korea.</Introduce>
-            <Word>Hangul is the most simplest language in the word. Using Hangul, we could express almost every sound that we could hear. Hangul is made by King Sejong at 1443. Hangul made lot of people read and write. Also, Hangul is also selected as Unesco World Record Heritage Site.</Word>
+            <Word>I'm a student in BCC. I like watching baseball and movies. I am preparing to got to college right now. I like to talk with each other. My favorite food is fried chicken. I could speak Korean and English, and little bit of Chinese. I am thinking about my dream a lot, but I want to become a producer.</Word>
             <Information>Name:</Information>
             <Information>Email:</Information>
             <Information>Phone:</Information>
