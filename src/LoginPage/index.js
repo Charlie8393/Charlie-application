@@ -56,7 +56,6 @@ const Button = styled.button`
     position: relative;
     left: 3%;
     background-color:#03fc90;
-    
 `
 function LoginPage(){
     const history = useHistory();
