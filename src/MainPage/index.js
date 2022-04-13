@@ -51,10 +51,10 @@ const Ig = styled.div`
 `
 const Profile = styled.img`
     margin-top: -500px;  
-    width : 250px;
-    height: 250px;
+    width : 350px;
+    height: 350px;
     position: center;
-    margin-left: 230%;
+    margin-left: 150%;
 `
 function MainPage(){
     const history = useHistory();

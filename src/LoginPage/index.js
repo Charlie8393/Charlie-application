@@ -51,10 +51,8 @@ const WelcomeTitle = styled.h1`
 const Button = styled.button`
     font-weight: 800;
     color: #3503fc;
-    width:100px;
-    height:50px;
+    font-size: 24px;
     position: relative;
-    left: 3%;
     background-color:#03fc90;
 `
 function LoginPage(){
