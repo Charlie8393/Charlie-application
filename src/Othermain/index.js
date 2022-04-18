@@ -74,6 +74,22 @@ const Leftside = styled.div`
 
 `;
 
+const TVshow = styled.div`
+    background-color:#0366fc;
+    width:100%;
+    height:100%;
+    display: flex; 
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 80px;
+`
+const Nexttitle = styled.div`
+    color: #fc0314;
+    font-weight: 800;
+    font-size: 50px;
+    font-family: initial;
+    margin-left: 30%;
+`
 const Rightside = styled.div`
    
     margin-top: 0px;
@@ -81,7 +97,13 @@ const Rightside = styled.div`
     height:100%;
     
 `;
-
+const Otherthings = styled.div`
+    color: #fce303;
+    font-weight: 800;
+    font-size: 25px;
+    margin-top: 40px;
+    margin-left: 17%;
+`
 const Me = styled.h1`
     color: #eb3477;
     font-weight: 800;
@@ -150,6 +172,12 @@ const Profile2 = styled.img`
     position: center;
     margin-left: 22%;
 `
+const Profile3 = styled.img` 
+    width : 350px;
+    height: 250px;
+    position: center;
+    margin-left: 22%;
+`
 const ImageBox = styled.div`
     border: 1rem solid #346beb;
     width 420px;
@@ -159,6 +187,10 @@ const ImageBox = styled.div`
 `
 
 function Othermain(){
+    const history = useHistory();
+    const mymain = () => {
+        history.push("/main3");
+    }
     const bs = {
         width: "300px",
         backgroundColor: "#b1db1a",
@@ -216,6 +248,17 @@ function Othermain(){
                 <Things>5. Major of business management</Things>
                 <Profile2 src="https://www.essaycorp.com/blog/wp-content/uploads/2017/06/what-is-business-management-major.png"></Profile2>
             </Department>
+            <TVshow>
+                <Nexttitle>My favorite TV show</Nexttitle>
+                <Otherthings>1. Running man</Otherthings>
+                <Profile3 src="https://img2.sbs.co.kr/img/sbs_cms/WE/2021/07/12/kvA1626048111955-640-360.jpg"></Profile3>
+                <Otherthings>2. How do you play?</Otherthings>
+                <Profile3 src="https://img.imbc.com/adams/Program/20221/132877303718407799.jpg"></Profile3>
+                <Otherthings>3. King of mask singers</Otherthings>
+                <Profile3 src="https://img.imbc.com/adams/Program/20174/131359210625390894.jpg"></Profile3>
+                <Otherthings>4. Delicious guys</Otherthings>
+                <Profile3 src="https://img-lb.joynews24.com/v1/facebookexternalhit/face/626x352/1970e0830a18c0.jpg"></Profile3>
+            </TVshow>
         </Container>
         
     );
